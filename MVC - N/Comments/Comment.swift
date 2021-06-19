@@ -14,7 +14,7 @@ struct Comment {
     var email: String
     var body: String
     
-    init?(dict: AnyObject) { //делаем failable init для json
+    init?(dict: [String: AnyObject]) { //делаем failable init для json
         guard let postId = dict["postId"] as? Int,
               let id = dict["id"] as? Int,
               let name = dict["name"] as? String,
