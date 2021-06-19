@@ -15,6 +15,9 @@
 		59D6840B267CB5EA004EFB9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D68409267CB5EA004EFB9C /* LaunchScreen.storyboard */; };
 		59D6841C267CBFBD004EFB9C /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D6841B267CBFBD004EFB9C /* CommentCell.swift */; };
 		59D6841E267CC18E004EFB9C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D6841D267CC18E004EFB9C /* Comment.swift */; };
+		59D68421267E2ED2004EFB9C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D68420267E2ED2004EFB9C /* NetworkService.swift */; };
+		59D68426267E3C6C004EFB9C /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D68425267E3C6C004EFB9C /* CommentNetworkService.swift */; };
+		59D68428267E3DC5004EFB9C /* GetCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D68427267E3DC5004EFB9C /* GetCommentResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		59D6840C267CB5EA004EFB9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59D6841B267CBFBD004EFB9C /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		59D6841D267CC18E004EFB9C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		59D68420267E2ED2004EFB9C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		59D68425267E3C6C004EFB9C /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
+		59D68427267E3DC5004EFB9C /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 				59D68412267CB63B004EFB9C /* Model */,
 				59D68413267CB643004EFB9C /* View */,
 				59D68414267CB649004EFB9C /* Controller */,
+				59D6841F267E2E99004EFB9C /* NetworkService */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -107,6 +114,7 @@
 				59D68419267CB6E9004EFB9C /* Model */,
 				59D68418267CB6E3004EFB9C /* View */,
 				59D68417267CB6DC004EFB9C /* Controller */,
+				59D68424267E3C0C004EFB9C /* CommentNetworkService */,
 			);
 			path = Comments;
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				59D6841D267CC18E004EFB9C /* Comment.swift */,
+				59D68427267E3DC5004EFB9C /* GetCommentResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,6 +152,22 @@
 				59D6840C267CB5EA004EFB9C /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59D6841F267E2E99004EFB9C /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				59D68420267E2ED2004EFB9C /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		59D68424267E3C0C004EFB9C /* CommentNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				59D68425267E3C6C004EFB9C /* CommentNetworkService.swift */,
+			);
+			path = CommentNetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +244,10 @@
 				59D68403267CB5E3004EFB9C /* CommentsViewController.swift in Sources */,
 				59D683FF267CB5E3004EFB9C /* AppDelegate.swift in Sources */,
 				59D68401267CB5E3004EFB9C /* SceneDelegate.swift in Sources */,
+				59D68421267E2ED2004EFB9C /* NetworkService.swift in Sources */,
+				59D68428267E3DC5004EFB9C /* GetCommentResponse.swift in Sources */,
 				59D6841C267CBFBD004EFB9C /* CommentCell.swift in Sources */,
+				59D68426267E3C6C004EFB9C /* CommentNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
